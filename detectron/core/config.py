@@ -228,7 +228,7 @@ __C.TEST.MAX_SIZE = 1000
 
 # Overlap threshold used for non-maximum suppression (suppress boxes with
 # IoU >= this threshold)
-__C.TEST.NMS = 0.3
+__C.TEST.NMS = 0.45
 
 # Apply Fast R-CNN style bounding-box regression if True
 __C.TEST.BBOX_REG = True
@@ -287,7 +287,7 @@ __C.TEST.PRECOMPUTED_PROPOSALS = True
 __C.TEST.BBOX_AUG = AttrDict()
 
 # Enable test-time augmentation for bounding box detection if True
-__C.TEST.BBOX_AUG.ENABLED = False
+__C.TEST.BBOX_AUG.ENABLED = True
 
 # Heuristic used to combine predicted box scores
 #   Valid options: ('ID', 'AVG', 'UNION')
@@ -298,7 +298,7 @@ __C.TEST.BBOX_AUG.SCORE_HEUR = b'UNION'
 __C.TEST.BBOX_AUG.COORD_HEUR = b'UNION'
 
 # Horizontal flip at the original scale (id transform)
-__C.TEST.BBOX_AUG.H_FLIP = False
+__C.TEST.BBOX_AUG.H_FLIP = True
 
 # Each scale is the pixel size of an image's shortest side
 __C.TEST.BBOX_AUG.SCALES = ()
@@ -307,7 +307,7 @@ __C.TEST.BBOX_AUG.SCALES = ()
 __C.TEST.BBOX_AUG.MAX_SIZE = 4000
 
 # Horizontal flip at each scale
-__C.TEST.BBOX_AUG.SCALE_H_FLIP = False
+__C.TEST.BBOX_AUG.SCALE_H_FLIP = True
 
 # Apply scaling based on object size
 __C.TEST.BBOX_AUG.SCALE_SIZE_DEP = False
@@ -318,7 +318,7 @@ __C.TEST.BBOX_AUG.AREA_TH_HI = 180**2
 __C.TEST.BBOX_AUG.ASPECT_RATIOS = ()
 
 # Horizontal flip at each aspect ratio
-__C.TEST.BBOX_AUG.ASPECT_RATIO_H_FLIP = False
+__C.TEST.BBOX_AUG.ASPECT_RATIO_H_FLIP = True
 
 # ---------------------------------------------------------------------------- #
 # Test-time augmentations for mask detection
@@ -397,7 +397,7 @@ __C.TEST.KPS_AUG.ASPECT_RATIO_H_FLIP = False
 __C.TEST.SOFT_NMS = AttrDict()
 
 # Use soft NMS instead of standard NMS if set to True
-__C.TEST.SOFT_NMS.ENABLED = False
+__C.TEST.SOFT_NMS.ENABLED = True
 # See soft NMS paper for definition of these options
 __C.TEST.SOFT_NMS.METHOD = b'linear'
 __C.TEST.SOFT_NMS.SIGMA = 0.5

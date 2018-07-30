@@ -129,6 +129,7 @@ class JsonDataset(object):
         # Reference back to the parent dataset
         entry['dataset'] = self
         # Make file_name an abs path
+        
         im_path = os.path.join(
             self.image_directory, self.image_prefix + entry['file_name']
         )
