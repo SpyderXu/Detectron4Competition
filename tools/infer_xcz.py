@@ -122,7 +122,7 @@ def main(args):
 
     for i, im_name in enumerate(im_list):
         logger.info('Processing {}'.format(i))
-        output.write(im_name+"\n")
+        output.write(im_name[-40:]+"\n")
         im = cv2.imread(im_name)
         timers = defaultdict(Timer)
         t = time.time()
