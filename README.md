@@ -60,7 +60,7 @@ This is an instance segmentation competition which is a bit complicate compared 
 > Crop the image from 3384 * 2710 to 2284 * 1210
 > Change the ROI align resolution for object detection from 7 * 7 to 14 * 14
 > Change the ROI align resolution for instance segmentation
-> ##### Some ideas that we has no time to try
+> ##### Some ideas that we have no time to try
 > 1) More training augmentation: It is easy to expand the detectron with H-flip,V-flip, change the brightness or other attributes of the images, but difficult to do random crop. You may do random crop before training. 
 > 2) Change the softmax classification loss to focal loss to balance the classes.
 > 3) Change the Cross Entropy Loss（instance segmentation loss）to Dice loss or other new semantic segemtation loss.
