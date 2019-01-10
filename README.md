@@ -44,11 +44,6 @@ The purpose of this competition is to detect the cars from the pictures which ar
 The purpose of this competition is to detect the safety hat from the pictures. The detailed information about this competition could be found on their website. Overall, it is also an easy competition.
 #### Solution
 > The solution of safety hat detection is similar to car detection. The differences are the adopted scales during multi-scale training and multi-scale testing.
-> ##### An interesting data leak
-> During the competition, I found an interesting trick to improve the detection accuracy. As we all know, when labeling objects 
-> with boxes, the labeler may resize the image to a smaller scale if the screen could not show the original entire image. The 
-> position pixels could not cover all possible pixels in such situation. After exploring the training label, I found the images > are resize to one-third during labeling. So I approximate the predicted position to the nearby pixels appearing in training 
-> label. The results gain a boost!<br>
 > ##### Some ideas that we not try:
 > 1) Save the results of different model before nms then ensemble the results and do final soft-nms<br>
 ### [DF: Video Segmentation Challenge](https://www.datafountain.cn/competitions/324/details)
