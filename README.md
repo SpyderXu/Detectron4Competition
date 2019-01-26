@@ -4,7 +4,7 @@ Detectron is Facebook AI Research's software system that implements state-of-the
 >   [DC: Traffic jam car detection 3rd](http://www.dcjingsai.com/common/cmpt/%E4%BA%A4%E9%80%9A%E5%8D%A1%E5%8F%A3%E8%BD%A6%E8%BE%86%E4%BF%A1%E6%81%AF%E7%B2%BE%E5%87%86%E8%AF%86%E5%88%AB_%E6%8E%92%E8%A1%8C%E6%A6%9C.html)<br>
 >   [DF: Safety hat detection 3rd](https://www.datafountain.cn/competitions/304/details)<br>
 >   [DF: Video Segmentation Challenge 2nd](https://www.datafountain.cn/competitions/324/details)<br>
->   [Kaggle: Airbus Ship Detection Challenge (Part solution) 23/884](https://www.kaggle.com/c/airbus-ship-detection)<br>
+>   [Kaggle: Airbus Ship Detection Challenge (Part solution) 23/884 Top 3%](https://www.kaggle.com/c/airbus-ship-detection)<br>
 ## Detectors and detection tricks in Detectron
 Detectron supplies [Fast RCNN](https://arxiv.org/abs/1504.08083), [Faster RCNN](https://arxiv.org/abs/1506.01497), [FPN](https://arxiv.org/abs/1612.03144), [RetinaNet](https://arxiv.org/abs/1708.02002), [MaskRCNN](https://arxiv.org/pdf/1703.06870v1.pdf). We could learn a lot from this series of work. Besides, Detectron also provides different kinds of base network which could be found under the configs folder.<br> 
 Detectron also provides some detection tricks. Reading the config.py and the yaml file under test_time_aug folder carefully, you would find how to open them.<br> 
